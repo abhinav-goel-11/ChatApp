@@ -13,8 +13,8 @@ export default function Chat() {
   return (
     <SBProvider
       appId={"B44B43A4-6969-4A15-B8B5-C1AEA0540476"}
-      userId={"abhinav-goel"}
-      
+      userId={"imu san"}
+      theme="dark"
     >
       <CustomizedApp />
     </SBProvider>
