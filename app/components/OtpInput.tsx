@@ -5,14 +5,12 @@ type OtpInputProps = {
   value: string;
   valueLength: number;
   onChange: (newValue: string) => void;
-  allowAutoSubmit?: () => void;
 };
 
 export default function OtpInput({
   valueLength,
   value,
   onChange,
-  allowAutoSubmit,
 }: OtpInputProps) {
   const valueItems = useMemo(() => {
     const valueArray = value.split("");
@@ -74,7 +72,7 @@ export default function OtpInput({
       onChange(targetValue);
       target.blur();
     }
-    
+
     
   };
 
@@ -114,6 +112,7 @@ export default function OtpInput({
     }
     target.setSelectionRange(0, target.value.length);
   };
+
   return (
     <div className="space-x-4">
       {valueItems.map((digit, idx) => (
