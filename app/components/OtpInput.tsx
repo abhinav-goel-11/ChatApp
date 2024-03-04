@@ -72,8 +72,6 @@ export default function OtpInput({
       onChange(targetValue);
       target.blur();
     }
-
-    
   };
 
   const inputOnKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
