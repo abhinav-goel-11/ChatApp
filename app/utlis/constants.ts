@@ -1,0 +1,1 @@
+export const RE_DIGT = new RegExp(/^\d+$/);

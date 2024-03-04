@@ -21,7 +21,7 @@ export default function RootLayout({
         <div className=" ">
 
           <Header />
-          <main className="bg-slate-800 text-white h-screen">{children}</main>
+          <main className="bg-slate-800 text-white h-screen flex items-center justify-center">{children}</main>
         </div>
       </body>
     </html>
